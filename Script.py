@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+import pprint
 import requests
 import os
 
@@ -117,4 +118,5 @@ print('***Task completed***')
 if print =='y':
     print('All pdf files have been downloaded')
 
-print(f'Final output is --> \n \n{data}')
+print('Final output is --> \n')
+print(f'{pprint.pprint(data)}')
